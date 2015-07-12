@@ -6,8 +6,10 @@ Probability Density Function
 
 The [probability density function](https://en.wikipedia.org/wiki/Probability_density_function) (PDF) for a [Beta](https://en.wikipedia.org/wiki/Beta_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="" data-equation="eq:pdf_function">
-	<img src="" alt="Probability density function (PDF) for a Beta distribution.">
+<div class="equation" align="center" data-raw-text="f(x;\alpha,\beta)= \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) + \Gamma(\beta)}{x^{\alpha-1}(1-x)^{\beta-1}} &amp; \text{ for } x \in [0,1] \\
+0 &amp; \text{ otherwise }
+\end{cases}" data-equation="eq:pdf_function">
+	<img src="https://cdn.rawgit.com/distributions-io/beta-pdf/497a37c9c7650b06a762aa47d43d8a1ccc53327f/docs/img/eqn.svg" alt="Probability density function (PDF) for a Beta distribution.">
 	<br>
 </div>
 
