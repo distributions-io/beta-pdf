@@ -6,10 +6,10 @@ Probability Density Function
 
 The [probability density function](https://en.wikipedia.org/wiki/Probability_density_function) (PDF) for a [Beta](https://en.wikipedia.org/wiki/Beta_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="f(x;\alpha,\beta)= \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) + \Gamma(\beta)}{x^{\alpha-1}(1-x)^{\beta-1}} &amp; \text{ for } x \in [0,1] \\
+<div class="equation" align="center" data-raw-text="f(x;\alpha,\beta)= \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) + \Gamma(\beta)}{x^{\alpha-1}(1-x)^{\beta-1}} &amp; \text{ for } x \in (0,1) \\
 0 &amp; \text{ otherwise }
 \end{cases}" data-equation="eq:pdf_function">
-	<img src="https://cdn.rawgit.com/distributions-io/beta-pdf/497a37c9c7650b06a762aa47d43d8a1ccc53327f/docs/img/eqn.svg" alt="Probability density function (PDF) for a Beta distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/beta-pdf/8fe75e73263bfc55e7208ea1ac6cba505a923221/docs/img/eqn.svg" alt="Probability density function (PDF) for a Beta distribution.">
 	<br>
 </div>
 
@@ -51,15 +51,15 @@ x = [ 0, 0.5, 1, 1.5, 2, 2.5 ];
 out = pdf( x );
 // returns [...]
 
-x = new Int8Array( x );
+x = new Float32Array( x );
 out = pdf( x );
 // returns Float64Array( [...] )
 
-x = new Int16Array( 6 );
+x = new Float64Array( 6 );
 for ( i = 0; i < 6; i++ ) {
-	x[ i ] = i*0.5;
+	x[ i ] = i / 6;
 }
-mat = matrix( x, [3,2], 'int16' );
+mat = matrix( x, [3,2], 'float64' );
 /*
 	[ 0  0.5
 	  1  1.5
@@ -188,9 +188,9 @@ out = pdf( x, {
 bool = ( x === out );
 // returns true
 
-x = new Int16Array( 6 );
+x = new Float64Array( 6 );
 for ( i = 0; i < 6; i++ ) {
-	x[ i ] = i*0.5;
+	x[ i ] = i / 6;
 }
 mat = matrix( x, [3,2], 'int16' );
 /*
