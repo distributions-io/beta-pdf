@@ -26,8 +26,8 @@ var expect = chai.expect,
 
 describe( 'matrix pdf', function tests() {
 
-	var alpha = 1,
-		beta = 1,
+	var alpha = 2,
+		beta = 2,
 		out,
 		mat,
 		d1,
@@ -37,8 +37,8 @@ describe( 'matrix pdf', function tests() {
 	d1 = new Float64Array( 25 );
 	d2 = new Float64Array( 25 );
 	for ( i = 0; i < d1.length; i++ ) {
-		d1[ i ] = i / 5;
-		d2[ i ] = PDF( i / 5, alpha, beta );
+		d1[ i ] = i / 25;
+		d2[ i ] = PDF( i / 25, alpha, beta );
 	}
 
 	beforeEach( function before() {
