@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "compute-array-constructors": "^1.0.0",
+    "compute-betaln": "0.0.0",
     "dstructs-matrix": "^2.0.0",
     "log1p": "^1.0.0",
     "utils-deep-get": "^1.0.0",
@@ -47,7 +48,7 @@
     "validate.io-nonnegative-integer": "^1.0.0",
     "validate.io-number-primitive": "^1.0.0",
     "validate.io-object": "^1.0.4",
-    "validate.io-positive-primitive": "^1.0.0",
+    "validate.io-positive": "^1.0.0",
     "validate.io-string-primitive": "^1.0.0",
     "validate.io-typed-array-like": "^1.0.0"
   },
